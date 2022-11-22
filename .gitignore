@@ -130,3 +130,7 @@ dmypy.json
 
 # Twitter API credentials
 api_access.json
+
+# Large JSON files
+f_of_f*.json
+user*.json
