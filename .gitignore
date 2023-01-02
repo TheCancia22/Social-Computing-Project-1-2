@@ -133,3 +133,5 @@ api_access.json
 
 # Large JSON files
 f_of_f*.json
+parte_1/data/all_users_final.json
+parte_1/data/user_complete.json
