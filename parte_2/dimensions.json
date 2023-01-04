@@ -1,0 +1,88 @@
+[
+    {
+        "name" : "truthfulness-1",
+        "name_pretty": false,
+        "description":"indicare il valore di verità dello statement", 
+        "scale": {
+            "type":"categorical", 
+            "mapping":[
+                {
+                    "label":"Lie", 
+                    "value":"0"
+                },
+                {
+                    "label":"False",
+                    "value":"1"
+                }, 
+                {
+                    "label":"Barely True", 
+                    "value":"2"
+                },
+                {
+                    "label":"Half True",
+                    "value":"3"
+                }, 
+                {
+                    "label":"Mostly True", 
+                    "value":"5"
+                }
+            ]
+        }, 
+        "style":{
+            "type":"list",
+            "position":"top"
+        }
+    },
+    {
+        "name":"explanation-quality",
+        "description":"stimare la qualità della spiegazione nel supportare la scelta del valore di verità",
+        // manca la scala a gradi da 1-100 non so come si fa
+    },    
+    {
+        "name":"truthfulness-2",
+        "description":false,
+        "justification":{
+			"text": "Your justification here (You can use your own words or, even better, copy/paste from the selected URL; you cannot use the selected search engine url as part of the justification).",
+            "min_words":5
+        }, 
+        "url":{
+            "enable":"true",
+            "instructions":{
+                
+            }
+        },
+        "scale":{
+            "type":"categorical",
+            "mapping":[
+                {
+                    "Label":"Lie",
+                    "value":"0"
+                },
+                {
+                    "label":"False", 
+                    "value":"1"
+                },
+                {
+                    "label":"Barely True",
+                    "value":"2"
+                },
+                {
+                    "label":"Half True",
+                    "value":"3"
+                },
+                {
+                    "label":"Mostly True",
+                    "value":"4"
+                },
+                {
+                    "label":"True", 
+                    "value":"5"
+                }
+            ]
+        }, 
+        "style":{
+            "type":"list", 
+            "position":"bottom"
+        }
+    }
+]
