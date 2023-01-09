@@ -8,20 +8,20 @@
             {
                 "id": "N_51526",
                 "statement": "Hush (2016 film) was produced by Jason Blum.",
-                "explanation": "The evidence says that the film was produced by Trevor Macy and Jason Blum. The claim says that the film was produced by Jason Blum. So, the answer must be false because the film was produced by Trevor Macy, not just Jason Blum.",
-                "label": "REFUTES"
+                "label": "REFUTES",
+                "explanation": "The evidence says that the film was produced by Trevor Macy and Jason Blum. The claim says that the film was produced by Jason Blum. So, the answer must be false because the film was produced by Trevor Macy, not just Jason Blum."
             },
             {
                 "id": "N_77465",
                 "statement": "Winter's Tale was released in 1987.",
-                "explanation": "The claim is that Winter's Tale was released in 1987. The evidence states that Winter's Tale is a 1983 novel by Mark Helprin. This is a novel, so it wasn't released in 1987. Therefore, the claim is false.",
-                "label": "REFUTES"
+                "label": "REFUTES",
+                "explanation": "The claim is that Winter's Tale was released in 1987. The evidence states that Winter's Tale is a 1983 novel by Mark Helprin. This is a novel, so it wasn't released in 1987. Therefore, the claim is false."
             },
             {
                 "id": "G_51526",
                 "statement": "Hush (2016 film) was produced by Jason Blum.",
-                "explanation": "Hush (2016 film) was produced by Trevor Macy and Jason Blum.",
-                "label": "REFUTES"
+                "label": "REFUTES",
+                "explanation": "Hush (2016 film) was produced by Trevor Macy and Jason Blum."
             }
         ]
     },
@@ -34,20 +34,20 @@
             {
                 "id": "G_166632",
                 "statement": "Anne Rice was born in the United States of America.",
-                "explanation": "Anne Rice was born in New Orleans, Louisiana, which is in the United States of America.",
-                "label": "SUPPORTS"
+                "label": "SUPPORTS",
+                "explanation": "Anne Rice was born in New Orleans, Louisiana, which is in the United States of America."
             },
             {
                 "id": "N_166632",
                 "statement": "Anne Rice was born in the United States of America.",
-                "explanation": "The claim is that Anne Rice was born in the United States of America. The evidence states that she was born in New Orleans and that New Orleans is a major United States port. Therefore, the claim is true.",
-                "label": "SUPPORTS"
+                "label": "SUPPORTS",
+                "explanation": "The claim is that Anne Rice was born in the United States of America. The evidence states that she was born in New Orleans and that New Orleans is a major United States port. Therefore, the claim is true."
             },
             {
                 "id": "N_77465",
                 "statement": "Winter's Tale was released in 1987.",
-                "explanation": "The claim is that Winter's Tale was released in 1987. The evidence states that Winter's Tale is a 1983 novel by Mark Helprin. This is a novel, so it wasn't released in 1987. Therefore, the claim is false.",
-                "label": "REFUTES"
+                "label": "REFUTES",
+                "explanation": "The claim is that Winter's Tale was released in 1987. The evidence states that Winter's Tale is a 1983 novel by Mark Helprin. This is a novel, so it wasn't released in 1987. Therefore, the claim is false."
             }
         ]
     },
@@ -60,20 +60,20 @@
             {
                 "id": "G_77465",
                 "statement": "Winter's Tale was released in 1987.",
-                "explanation": "Winter's Tale was released in 2014.",
-                "label": "REFUTES"
+                "label": "REFUTES",
+                "explanation": "Winter's Tale was released in 2014."
             },
             {
                 "id": "N_166632",
                 "statement": "Anne Rice was born in the United States of America.",
-                "explanation": "The claim is that Anne Rice was born in the United States of America. The evidence states that she was born in New Orleans and that New Orleans is a major United States port. Therefore, the claim is true.",
-                "label": "SUPPORTS"
+                "label": "SUPPORTS",
+                "explanation": "The claim is that Anne Rice was born in the United States of America. The evidence states that she was born in New Orleans and that New Orleans is a major United States port. Therefore, the claim is true."
             },
             {
                 "id": "N_77465",
                 "statement": "Winter's Tale was released in 1987.",
-                "explanation": "The claim is that Winter's Tale was released in 1987. The evidence states that Winter's Tale is a 1983 novel by Mark Helprin. This is a novel, so it wasn't released in 1987. Therefore, the claim is false.",
-                "label": "REFUTES"
+                "label": "REFUTES",
+                "explanation": "The claim is that Winter's Tale was released in 1987. The evidence states that Winter's Tale is a 1983 novel by Mark Helprin. This is a novel, so it wasn't released in 1987. Therefore, the claim is false."
             }
         ]
     },
@@ -86,20 +86,20 @@
             {
                 "id": "G_51526",
                 "statement": "Hush (2016 film) was produced by Jason Blum.",
-                "explanation": "Hush (2016 film) was produced by Trevor Macy and Jason Blum.",
-                "label": "REFUTES"
+                "label": "REFUTES",
+                "explanation": "Hush (2016 film) was produced by Trevor Macy and Jason Blum."
             },
             {
                 "id": "N_51526",
                 "statement": "Hush (2016 film) was produced by Jason Blum.",
-                "explanation": "The evidence says that the film was produced by Trevor Macy and Jason Blum. The claim says that the film was produced by Jason Blum. So, the answer must be false because the film was produced by Trevor Macy, not just Jason Blum.",
-                "label": "REFUTES"
+                "label": "REFUTES",
+                "explanation": "The evidence says that the film was produced by Trevor Macy and Jason Blum. The claim says that the film was produced by Jason Blum. So, the answer must be false because the film was produced by Trevor Macy, not just Jason Blum."
             },
             {
                 "id": "N_166632",
                 "statement": "Anne Rice was born in the United States of America.",
-                "explanation": "The claim is that Anne Rice was born in the United States of America. The evidence states that she was born in New Orleans and that New Orleans is a major United States port. Therefore, the claim is true.",
-                "label": "SUPPORTS"
+                "label": "SUPPORTS",
+                "explanation": "The claim is that Anne Rice was born in the United States of America. The evidence states that she was born in New Orleans and that New Orleans is a major United States port. Therefore, the claim is true."
             }
         ]
     },
@@ -112,20 +112,20 @@
             {
                 "id": "N_77465",
                 "statement": "Winter's Tale was released in 1987.",
-                "explanation": "The claim is that Winter's Tale was released in 1987. The evidence states that Winter's Tale is a 1983 novel by Mark Helprin. This is a novel, so it wasn't released in 1987. Therefore, the claim is false.",
-                "label": "REFUTES"
+                "label": "REFUTES",
+                "explanation": "The claim is that Winter's Tale was released in 1987. The evidence states that Winter's Tale is a 1983 novel by Mark Helprin. This is a novel, so it wasn't released in 1987. Therefore, the claim is false."
             },
             {
                 "id": "N_166632",
                 "statement": "Anne Rice was born in the United States of America.",
-                "explanation": "The claim is that Anne Rice was born in the United States of America. The evidence states that she was born in New Orleans and that New Orleans is a major United States port. Therefore, the claim is true.",
-                "label": "SUPPORTS"
+                "label": "SUPPORTS",
+                "explanation": "The claim is that Anne Rice was born in the United States of America. The evidence states that she was born in New Orleans and that New Orleans is a major United States port. Therefore, the claim is true."
             },
             {
                 "id": "G_77465",
                 "statement": "Winter's Tale was released in 1987.",
-                "explanation": "Winter's Tale was released in 2014.",
-                "label": "REFUTES"
+                "label": "REFUTES",
+                "explanation": "Winter's Tale was released in 2014."
             }
         ]
     },
@@ -138,20 +138,20 @@
             {
                 "id": "N_166632",
                 "statement": "Anne Rice was born in the United States of America.",
-                "explanation": "The claim is that Anne Rice was born in the United States of America. The evidence states that she was born in New Orleans and that New Orleans is a major United States port. Therefore, the claim is true.",
-                "label": "SUPPORTS"
+                "label": "SUPPORTS",
+                "explanation": "The claim is that Anne Rice was born in the United States of America. The evidence states that she was born in New Orleans and that New Orleans is a major United States port. Therefore, the claim is true."
             },
             {
                 "id": "G_166632",
                 "statement": "Anne Rice was born in the United States of America.",
-                "explanation": "Anne Rice was born in New Orleans, Louisiana, which is in the United States of America.",
-                "label": "SUPPORTS"
+                "label": "SUPPORTS",
+                "explanation": "Anne Rice was born in New Orleans, Louisiana, which is in the United States of America."
             },
             {
                 "id": "N_51526",
                 "statement": "Hush (2016 film) was produced by Jason Blum.",
-                "explanation": "The evidence says that the film was produced by Trevor Macy and Jason Blum. The claim says that the film was produced by Jason Blum. So, the answer must be false because the film was produced by Trevor Macy, not just Jason Blum.",
-                "label": "REFUTES"
+                "label": "REFUTES",
+                "explanation": "The evidence says that the film was produced by Trevor Macy and Jason Blum. The claim says that the film was produced by Jason Blum. So, the answer must be false because the film was produced by Trevor Macy, not just Jason Blum."
             }
         ]
     },
@@ -164,20 +164,20 @@
             {
                 "id": "N_51526",
                 "statement": "Hush (2016 film) was produced by Jason Blum.",
-                "explanation": "The evidence says that the film was produced by Trevor Macy and Jason Blum. The claim says that the film was produced by Jason Blum. So, the answer must be false because the film was produced by Trevor Macy, not just Jason Blum.",
-                "label": "REFUTES"
+                "label": "REFUTES",
+                "explanation": "The evidence says that the film was produced by Trevor Macy and Jason Blum. The claim says that the film was produced by Jason Blum. So, the answer must be false because the film was produced by Trevor Macy, not just Jason Blum."
             },
             {
                 "id": "G_77465",
                 "statement": "Winter's Tale was released in 1987.",
-                "explanation": "Winter's Tale was released in 2014.",
-                "label": "REFUTES"
+                "label": "REFUTES",
+                "explanation": "Winter's Tale was released in 2014."
             },
             {
                 "id": "N_77465",
                 "statement": "Winter's Tale was released in 1987.",
-                "explanation": "The claim is that Winter's Tale was released in 1987. The evidence states that Winter's Tale is a 1983 novel by Mark Helprin. This is a novel, so it wasn't released in 1987. Therefore, the claim is false.",
-                "label": "REFUTES"
+                "label": "REFUTES",
+                "explanation": "The claim is that Winter's Tale was released in 1987. The evidence states that Winter's Tale is a 1983 novel by Mark Helprin. This is a novel, so it wasn't released in 1987. Therefore, the claim is false."
             }
         ]
     },
@@ -190,20 +190,20 @@
             {
                 "id": "N_51526",
                 "statement": "Hush (2016 film) was produced by Jason Blum.",
-                "explanation": "The evidence says that the film was produced by Trevor Macy and Jason Blum. The claim says that the film was produced by Jason Blum. So, the answer must be false because the film was produced by Trevor Macy, not just Jason Blum.",
-                "label": "REFUTES"
+                "label": "REFUTES",
+                "explanation": "The evidence says that the film was produced by Trevor Macy and Jason Blum. The claim says that the film was produced by Jason Blum. So, the answer must be false because the film was produced by Trevor Macy, not just Jason Blum."
             },
             {
                 "id": "G_77465",
                 "statement": "Winter's Tale was released in 1987.",
-                "explanation": "Winter's Tale was released in 2014.",
-                "label": "REFUTES"
+                "label": "REFUTES",
+                "explanation": "Winter's Tale was released in 2014."
             },
             {
                 "id": "N_77465",
                 "statement": "Winter's Tale was released in 1987.",
-                "explanation": "The claim is that Winter's Tale was released in 1987. The evidence states that Winter's Tale is a 1983 novel by Mark Helprin. This is a novel, so it wasn't released in 1987. Therefore, the claim is false.",
-                "label": "REFUTES"
+                "label": "REFUTES",
+                "explanation": "The claim is that Winter's Tale was released in 1987. The evidence states that Winter's Tale is a 1983 novel by Mark Helprin. This is a novel, so it wasn't released in 1987. Therefore, the claim is false."
             }
         ]
     },
@@ -216,20 +216,20 @@
             {
                 "id": "N_51526",
                 "statement": "Hush (2016 film) was produced by Jason Blum.",
-                "explanation": "The evidence says that the film was produced by Trevor Macy and Jason Blum. The claim says that the film was produced by Jason Blum. So, the answer must be false because the film was produced by Trevor Macy, not just Jason Blum.",
-                "label": "REFUTES"
+                "label": "REFUTES",
+                "explanation": "The evidence says that the film was produced by Trevor Macy and Jason Blum. The claim says that the film was produced by Jason Blum. So, the answer must be false because the film was produced by Trevor Macy, not just Jason Blum."
             },
             {
                 "id": "G_51526",
                 "statement": "Hush (2016 film) was produced by Jason Blum.",
-                "explanation": "Hush (2016 film) was produced by Trevor Macy and Jason Blum.",
-                "label": "REFUTES"
+                "label": "REFUTES",
+                "explanation": "Hush (2016 film) was produced by Trevor Macy and Jason Blum."
             },
             {
                 "id": "N_77465",
                 "statement": "Winter's Tale was released in 1987.",
-                "explanation": "The claim is that Winter's Tale was released in 1987. The evidence states that Winter's Tale is a 1983 novel by Mark Helprin. This is a novel, so it wasn't released in 1987. Therefore, the claim is false.",
-                "label": "REFUTES"
+                "label": "REFUTES",
+                "explanation": "The claim is that Winter's Tale was released in 1987. The evidence states that Winter's Tale is a 1983 novel by Mark Helprin. This is a novel, so it wasn't released in 1987. Therefore, the claim is false."
             }
         ]
     },
@@ -242,20 +242,20 @@
             {
                 "id": "N_166632",
                 "statement": "Anne Rice was born in the United States of America.",
-                "explanation": "The claim is that Anne Rice was born in the United States of America. The evidence states that she was born in New Orleans and that New Orleans is a major United States port. Therefore, the claim is true.",
-                "label": "SUPPORTS"
+                "label": "SUPPORTS",
+                "explanation": "The claim is that Anne Rice was born in the United States of America. The evidence states that she was born in New Orleans and that New Orleans is a major United States port. Therefore, the claim is true."
             },
             {
                 "id": "G_166632",
                 "statement": "Anne Rice was born in the United States of America.",
-                "explanation": "Anne Rice was born in New Orleans, Louisiana, which is in the United States of America.",
-                "label": "SUPPORTS"
+                "label": "SUPPORTS",
+                "explanation": "Anne Rice was born in New Orleans, Louisiana, which is in the United States of America."
             },
             {
                 "id": "N_51526",
                 "statement": "Hush (2016 film) was produced by Jason Blum.",
-                "explanation": "The evidence says that the film was produced by Trevor Macy and Jason Blum. The claim says that the film was produced by Jason Blum. So, the answer must be false because the film was produced by Trevor Macy, not just Jason Blum.",
-                "label": "REFUTES"
+                "label": "REFUTES",
+                "explanation": "The evidence says that the film was produced by Trevor Macy and Jason Blum. The claim says that the film was produced by Jason Blum. So, the answer must be false because the film was produced by Trevor Macy, not just Jason Blum."
             }
         ]
     },
@@ -268,20 +268,20 @@
             {
                 "id": "N_51526",
                 "statement": "Hush (2016 film) was produced by Jason Blum.",
-                "explanation": "The evidence says that the film was produced by Trevor Macy and Jason Blum. The claim says that the film was produced by Jason Blum. So, the answer must be false because the film was produced by Trevor Macy, not just Jason Blum.",
-                "label": "REFUTES"
+                "label": "REFUTES",
+                "explanation": "The evidence says that the film was produced by Trevor Macy and Jason Blum. The claim says that the film was produced by Jason Blum. So, the answer must be false because the film was produced by Trevor Macy, not just Jason Blum."
             },
             {
                 "id": "G_51526",
                 "statement": "Hush (2016 film) was produced by Jason Blum.",
-                "explanation": "Hush (2016 film) was produced by Trevor Macy and Jason Blum.",
-                "label": "REFUTES"
+                "label": "REFUTES",
+                "explanation": "Hush (2016 film) was produced by Trevor Macy and Jason Blum."
             },
             {
                 "id": "N_166632",
                 "statement": "Anne Rice was born in the United States of America.",
-                "explanation": "The claim is that Anne Rice was born in the United States of America. The evidence states that she was born in New Orleans and that New Orleans is a major United States port. Therefore, the claim is true.",
-                "label": "SUPPORTS"
+                "label": "SUPPORTS",
+                "explanation": "The claim is that Anne Rice was born in the United States of America. The evidence states that she was born in New Orleans and that New Orleans is a major United States port. Therefore, the claim is true."
             }
         ]
     },
@@ -294,20 +294,20 @@
             {
                 "id": "N_166632",
                 "statement": "Anne Rice was born in the United States of America.",
-                "explanation": "The claim is that Anne Rice was born in the United States of America. The evidence states that she was born in New Orleans and that New Orleans is a major United States port. Therefore, the claim is true.",
-                "label": "SUPPORTS"
+                "label": "SUPPORTS",
+                "explanation": "The claim is that Anne Rice was born in the United States of America. The evidence states that she was born in New Orleans and that New Orleans is a major United States port. Therefore, the claim is true."
             },
             {
                 "id": "N_77465",
                 "statement": "Winter's Tale was released in 1987.",
-                "explanation": "The claim is that Winter's Tale was released in 1987. The evidence states that Winter's Tale is a 1983 novel by Mark Helprin. This is a novel, so it wasn't released in 1987. Therefore, the claim is false.",
-                "label": "REFUTES"
+                "label": "REFUTES",
+                "explanation": "The claim is that Winter's Tale was released in 1987. The evidence states that Winter's Tale is a 1983 novel by Mark Helprin. This is a novel, so it wasn't released in 1987. Therefore, the claim is false."
             },
             {
                 "id": "G_166632",
                 "statement": "Anne Rice was born in the United States of America.",
-                "explanation": "Anne Rice was born in New Orleans, Louisiana, which is in the United States of America.",
-                "label": "SUPPORTS"
+                "label": "SUPPORTS",
+                "explanation": "Anne Rice was born in New Orleans, Louisiana, which is in the United States of America."
             }
         ]
     }
