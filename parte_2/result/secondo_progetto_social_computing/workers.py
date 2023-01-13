@@ -1,9 +1,9 @@
 import pandas as pd
-import pandas as np 
+import numpy as np 
 
 
 
-workers_time_id_resp = pd.read_csv(r'G:\uniud 2022 ULTIMO ANNO !!\social computing python\relazione 2\workers_answers.csv', 
+workers_time_id_resp = pd.read_csv(r"C:\Users\stefa\OneDrive\Documents\GitHub\Social-Computing-Project-1-2\parte_2\result\secondo_progetto_social_computing\Dataframe\workers_answers.csv", 
                          usecols=['worker_id','time_submit_parsed','doc_id','doc_truthfulness-1_value','doc_truthfulness-2_value'])
 # print(workers_time_id_resp)
 
@@ -45,12 +45,15 @@ workers_second_task = workers_second_task.set_index('worker_id')
 doc_1 = workers_second_task.loc[workers_second_task['doc_id'] == 'N_166632']             # task -> N_166632
 numero_righe = doc_1.shape[0]
 numero_coppie_totali_1 = (numero_righe*(numero_righe-1))/2
-numero_coppie_uguali = 0; 
+numero_coppie_uguali = 0
+print(doc_1.loc)
 # !!!! manca questa parte !!!!
-for x in doc_1['doc_2_val']: 
-    for y  in doc_1['doc_2_val']:
-        if(x == y): 
-            numero_coppie_totali_1 = numero_coppie_totali_1 +  1 
+for x in range(numero_righe): 
+    for y  in range(numero_righe):
+        value_x = doc_1.loc[x].at["doc_2_val"]
+        value_y = doc_1.loc[y].at["doc_2_val"]
+        if(x < y and value_x == value_y): 
+            numero_coppie_totali_1 += 1
 print(numero_coppie_uguali)
 # percentage agreement 
 #   numero_coppie_in_accordo
@@ -71,7 +74,7 @@ doc_6 = workers_second_task.loc[workers_second_task['doc_id'] == 'G_77465']     
 
 # Calcolate la percentuale media di testo annotato per ciascuna spiegazione Ordinate le spiegazioni sulla base di tale parametro
 # in questo caso ci serve tempo inizio tempo fine e task 
-workers_for_time = pd.read_csv(r'G:\uniud 2022 ULTIMO ANNO !!\social computing python\relazione 2\workers_dimensions_selection.csv', 
+workers_for_time = pd.read_csv(r'./Dataframe/workers_dimensions_selection.csv', 
                          usecols=['worker_id','dimension_name','document_id','timestamp_start_parsed','timestamp_end_parsed'])
 
 worker_one = workers_for_time.loc[workers_for_time['worker_id'] == 'A348JKD82WQ6Z']     # worker uno A348JKD82WQ6Z
