@@ -1,9 +1,14 @@
+from sqlite3 import Timestamp
+from tokenize import String
+from numpy import datetime_as_string
 import pandas as pd
-import numpy as np 
+import pandas as np 
+from datetime import datetime
+from dateutil import relativedelta
+from IPython.display import display
 
 
-
-workers_time_id_resp = pd.read_csv(r"C:\Users\stefa\OneDrive\Documents\GitHub\Social-Computing-Project-1-2\parte_2\result\secondo_progetto_social_computing\Dataframe\workers_answers.csv", 
+workers_time_id_resp = pd.read_csv(r'G:\uniud 2022 ULTIMO ANNO !!\social computing python\relazione 2\workers_answers.csv', 
                          usecols=['worker_id','time_submit_parsed','doc_id','doc_truthfulness-1_value','doc_truthfulness-2_value'])
 # print(workers_time_id_resp)
 
@@ -22,7 +27,6 @@ workers_second_task = workers_n_parsed[["worker_id","doc_id","doc_2_val"]]
 # problema nella riga 26 in conflitto con 30 -> prevale la riga 26
 workers_first_task = workers_first_task.drop([16,17,18,21,22,27,28,29,30])
 workers_first_task = workers_first_task.reset_index(drop=True)
-# print(workers_first_task)
 
 # valutiamo anche le seconde risposte 
 # conflitto con riga 3 -> riga 7 --> vince la riga 7
@@ -36,56 +40,61 @@ workers_first_task = workers_first_task.reset_index(drop=True)
 # conflitto con riga 26 - 30 -> vince la riga 26 
 workers_second_task = workers_second_task.drop([3,9,6,16,17,18,21,22,27,28,29,30]).reset_index(drop=True)
 workers_second_task = workers_second_task.set_index('worker_id')
-# print(workers_second_task)
-
 #         risposta worker 
 # doc_id  
 # table document -> N_166632
 # ricorda che per il numero di coppie totali possibili -> (n*(n-1))/2
+def compute_percent_agreement(doc_id):
+    doc_row = workers_second_task.loc[workers_second_task['doc_id'] == doc_id]
+    doc_reset = doc_id.reset_index(level="worker_id")
+
+    n_rows = doc_reset.shape[0]
+    total_pairs = (n_rows*(n_rows-1))/2
+    n_equal_pairs = 0
+    
+    for x in range(n_rows): 
+        for y  in range(n_rows):
+            if(x < y and doc_reset.at[x, "doc_2_val"] == doc_reset.at[y, "doc_2_val"]): 
+                n_equal_pairs += 1
+    return n_equal_pairs / total_pairs
+
 doc_1 = workers_second_task.loc[workers_second_task['doc_id'] == 'N_166632']             # task -> N_166632
-numero_righe = doc_1.shape[0]
-numero_coppie_totali_1 = (numero_righe*(numero_righe-1))/2
-numero_coppie_uguali = 0
-print(doc_1.loc)
-# !!!! manca questa parte !!!!
-for x in range(numero_righe): 
-    for y  in range(numero_righe):
-        value_x = doc_1.loc[x].at["doc_2_val"]
-        value_y = doc_1.loc[y].at["doc_2_val"]
-        if(x < y and value_x == value_y): 
-            numero_coppie_totali_1 += 1
-print(numero_coppie_uguali)
-# percentage agreement 
-#   numero_coppie_in_accordo
-#   ------------------------
-#   numero coppie totali 
-percentage_agreement_1 = numero_coppie_uguali/numero_coppie_totali_1
-
-
 doc_2 = workers_second_task.loc[workers_second_task['doc_id'] == 'G_166632']             # task -> G_166632
 doc_3 = workers_second_task.loc[workers_second_task['doc_id'] == 'N_51526']              # task -> N_51526
 doc_4 = workers_second_task.loc[workers_second_task['doc_id'] == 'G_51526']              # task -> G_51526
 doc_5 = workers_second_task.loc[workers_second_task['doc_id'] == 'N_77465']              # task -> N_77465
 doc_6 = workers_second_task.loc[workers_second_task['doc_id'] == 'G_77465']              # task -> G_77465
 
-# numero di volte che è stato annotato -> prendo tutte le istanze dello stesso task dello stesso worker e calcolo quante sono 
+
+# percentuale media di testo annotato -> quante volte appare la stessa istanza nella tabella - 1 
+# workers_annotation = workers_time_id_resp.reset_index()
+workers_annotation = workers_time_id_resp[["worker_id","doc_id"]]
+workers_annotation = workers_annotation.groupby(['worker_id','doc_id']).size()
+
+
+# Calcolate la percentuale media di testo annotato per ciascuna spiegazione
+# Ordinate le spiegazioni sulla base di tale parametro 
+quanto_hanno_annotato = pd.read_csv(r'G:\uniud 2022 ULTIMO ANNO !!\social computing python\relazione 2\workers_notes.csv', 
+                                    usecols=['worker_id','document_index','note_text_current','note_text_left','note_text_right','note_timestamp_created'])
+max_timestamp_ausiliario = quanto_hanno_annotato.groupby(by = ['worker_id','document_index'])['note_timestamp_created'].max().reset_index()
 
 
 
-# Calcolate la percentuale media di testo annotato per ciascuna spiegazione Ordinate le spiegazioni sulla base di tale parametro
-# in questo caso ci serve tempo inizio tempo fine e task 
-workers_for_time = pd.read_csv(r'./Dataframe/workers_dimensions_selection.csv', 
-                         usecols=['worker_id','dimension_name','document_id','timestamp_start_parsed','timestamp_end_parsed'])
 
-worker_one = workers_for_time.loc[workers_for_time['worker_id'] == 'A348JKD82WQ6Z']     # worker uno A348JKD82WQ6Z
-worker_two = workers_for_time.loc[workers_for_time['worker_id'] == 'A3OAQZM6Q3YJQ1']    # worker due A3OAQZM6Q3YJQ1
-worker_tree = workers_for_time.loc[workers_for_time['worker_id'] == 'A1TEEFJDPVEK0L']    # worker tre A1TEEFJDPVEK0L
-worker_four = workers_for_time.loc[workers_for_time['worker_id'] == 'A3T2NTPGB3KNDS']   # worker 4 A3T2NTPGB3KNDS
-worker_five = workers_for_time.loc[workers_for_time['worker_id'] == 'AYKZJHEV29ZHL']    # worker 5 AYKZJHEV29ZHL
-worker_six = workers_for_time.loc[workers_for_time['worker_id'] == 'A2Q51AC4E6I5ZB']    # worker 6 A2Q51AC4E6I5ZB
-worker_seven = workers_for_time.loc[workers_for_time['worker_id'] == 'A3W16X5D0VGU0E']  # worker 7 A3W16X5D0VGU0E
-worker_eight = workers_for_time.loc[workers_for_time['worker_id'] == 'A348JKD82WQ6Z']   # worker 8 A2Z4OTGC834F3Y
-worker_nine = workers_for_time.loc[workers_for_time['worker_id'] == 'A2N1GA8PJDDA6P']   # worker 9 A2N1GA8PJDDA6P
-worker_ten = workers_for_time.loc[workers_for_time['worker_id'] == 'AYUF9OHXQK2YT']     # worker 10 AYUF9OHXQK2YT
 
 # ottenuti i dati di inizio e di fine -> fare la differenza
+
+workers_time_diff = pd.read_csv(r'G:\uniud 2022 ULTIMO ANNO !!\social computing python\relazione 2\workers_answers.csv', 
+                         usecols=['worker_id','doc_id','doc_time_elapsed'])
+
+worker_one = workers_time_diff.loc[workers_time_diff['worker_id'] == 'A348JKD82WQ6Z']     # worker uno A348JKD82WQ6Z
+worker_two = workers_time_diff.loc[workers_time_diff['worker_id'] == 'A3OAQZM6Q3YJQ1']    # worker due A3OAQZM6Q3YJQ1
+worker_tree = workers_time_diff.loc[workers_time_diff['worker_id'] == 'A1TEEFJDPVEK0L']    # worker tre A1TEEFJDPVEK0L
+worker_four = workers_time_diff.loc[workers_time_diff['worker_id'] == 'A3T2NTPGB3KNDS']   # worker 4 A3T2NTPGB3KNDS
+worker_five = workers_time_diff.loc[workers_time_diff['worker_id'] == 'AYKZJHEV29ZHL']    # worker 5 AYKZJHEV29ZHL
+worker_six = workers_time_diff.loc[workers_time_diff['worker_id'] == 'A2Q51AC4E6I5ZB']    # worker 6 A2Q51AC4E6I5ZB
+worker_seven = workers_time_diff.loc[workers_time_diff['worker_id'] == 'A3W16X5D0VGU0E']  # worker 7 A3W16X5D0VGU0E
+worker_eight = workers_time_diff.loc[workers_time_diff['worker_id'] == 'A348JKD82WQ6Z']   # worker 8 A2Z4OTGC834F3Y
+worker_nine = workers_time_diff.loc[workers_time_diff['worker_id'] == 'A2N1GA8PJDDA6P']   # worker 9 A2N1GA8PJDDA6P
+worker_ten = workers_time_diff.loc[workers_time_diff['worker_id'] == 'AYUF9OHXQK2YT']     # worker 10 AYUF9OHXQK2YT
+
